@@ -54,6 +54,12 @@ nav ul li a:not(.except):hover::before {
   background-attachment: fixed;
   object-fit: contain;
 }
+.pizTitle div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 21;
+}
 
 * {
   margin: 0;
