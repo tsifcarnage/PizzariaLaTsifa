@@ -25,7 +25,7 @@ $colortitle:#F0D6AA;
         }
         h3{
             animation: zoomIn 2.5s ease-out forwards; 
-            transition: transform .5s ease, opacity .5s ease;
+            transition: transform .25s ease, opacity .25s ease;
             &:hover{
                 animation: zoomOutUp 2s ease-out forwards;
             }
@@ -47,11 +47,11 @@ $colortitle:#F0D6AA;
             }
             40% {
                 opacity: 1;
-                transform: scale(1.1) translateY(-20px); /* Zoom léger + déplacement vers le haut */
+                transform: scale(0.6) translateY(-20px); /* Zoom léger + déplacement vers le haut */
             }
             100% {
                 opacity: 0;
-                transform:scale(0.5) translateY(-400px); /* Réduction + déplacement plus loin vers le haut */
+                transform:scale(0.4) translateY(-400px); /* Réduction + déplacement plus loin vers le haut */
                 transform-origin: center bottom;
             }
         }
