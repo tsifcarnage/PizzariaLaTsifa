@@ -58,12 +58,12 @@ nav ul li a:not(.except):hover::before {
 .pizTitle div {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -80%);
+  top: 40%;
+  transform: translate(-50%, -50%);
   z-index: 21;
 }
 .pizTitle div h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #F0D6AA;
 }
 
