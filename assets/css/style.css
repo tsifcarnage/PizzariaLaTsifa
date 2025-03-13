@@ -53,12 +53,18 @@ nav ul li a:not(.except):hover::before {
   background-size: cover;
   background-attachment: fixed;
   object-fit: contain;
+  opacity: 50%;
 }
 .pizTitle div {
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -80%);
   z-index: 21;
+}
+.pizTitle div h1 {
+  font-size: 5rem;
+  color: #F0D6AA;
 }
 
 * {
@@ -77,6 +83,10 @@ body {
   font-size: 2rem;
   color: white;
   background-color: #131417;
+}
+
+h1, h2 {
+  font-family: "Inknut Antiqua", serif;
 }
 
 /*# sourceMappingURL=style.css.map */
