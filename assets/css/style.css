@@ -67,6 +67,19 @@ nav ul li a:not(.except):hover::before {
   color: #F0D6AA;
 }
 
+.a_propos {
+  padding: 5rem;
+}
+.a_propos article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.a_propos article p {
+  margin: 3rem 0;
+}
+
 * {
   margin: 0;
   padding: 0;

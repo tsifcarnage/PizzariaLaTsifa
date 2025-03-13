@@ -1,0 +1,10 @@
+@use '../mixins' as *;
+.a_propos{
+    padding: 5rem;
+    article{
+        @include flex(center,center,4rem);
+        p{
+            margin: 3rem 0;
+        }
+    }
+}
