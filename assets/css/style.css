@@ -195,13 +195,15 @@ nav ul li a:not(.except):hover::before {
 }
 .coord p {
   color: black;
+  padding-top: 1rem;
 }
 .coord div {
   width: 100%;
   max-width: 300px;
-  padding: 3rem;
+  padding: 2rem;
   margin: 0 3rem;
   background-color: #F0D6AA;
+  border-radius: 0.5rem;
 }
 .coord .phone, .coord .itin, .coord .mail {
   display: flex;
@@ -209,6 +211,20 @@ nav ul li a:not(.except):hover::before {
   align-items: center;
   gap: 0;
   flex-direction: column;
+}
+.coord a {
+  text-decoration: none;
+  color: white;
+  background-color: #131417;
+  border: 2px solid red;
+  border-radius: 5rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1.5rem;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.coord a:hover {
+  transform: scale(1.2);
+  color: red;
 }
 
 * {
