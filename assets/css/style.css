@@ -228,6 +228,10 @@ nav ul li a:not(.except):hover::before {
   color: red;
 }
 
+.horaire h2 {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
