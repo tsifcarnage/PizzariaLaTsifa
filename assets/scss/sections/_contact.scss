@@ -1,4 +1,5 @@
 @use '../mixins' as *;
+$color:#F0D6AA;
 .contact{
     margin:3rem 0;
     form{
@@ -49,6 +50,27 @@
                 }
             }
         }
-        
+    }
+}
+.coord{
+    margin: 3rem 0;
+    @include flex(center,center,0);
+    svg{
+        width: 100px;
+        height: 100px;
+    }
+    p{
+        color: black;
+    }
+    div{
+        width: 100%;
+        max-width: 300px;
+        padding: 3rem;
+        margin: 0 3rem;
+        background-color: $color;
+    }
+    .phone,.itin,.mail{
+        @include flex(center,center,0);
+        flex-direction: column;
     }
 }
