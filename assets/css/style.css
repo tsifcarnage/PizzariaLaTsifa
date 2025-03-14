@@ -119,6 +119,15 @@ nav ul li a:not(.except):hover::before {
   margin: 3rem 0;
 }
 
+.menu h2 {
+  text-align: center;
+}
+.menu div {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
