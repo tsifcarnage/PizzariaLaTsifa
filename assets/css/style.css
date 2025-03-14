@@ -128,6 +128,57 @@ nav ul li a:not(.except):hover::before {
   margin: auto;
 }
 
+.contact form h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.contact form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.contact form div input, .contact form div textarea, .contact form div button {
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem;
+}
+.contact form div textarea {
+  resize: vertical;
+  width: 100%;
+}
+.contact form div button {
+  position: relative;
+  width: 20%;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.contact form div button span {
+  position: relative;
+  z-index: 1;
+}
+.contact form div button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  z-index: 0;
+  transition: width 0.25s ease;
+}
+.contact form div button:hover::before {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

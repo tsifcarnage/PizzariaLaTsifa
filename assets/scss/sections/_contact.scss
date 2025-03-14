@@ -1,0 +1,53 @@
+@use '../mixins' as *;
+.contact{
+    form{
+        h2{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        div{
+            @include flex(center,center,3rem);
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            input,textarea,button{
+                width: 100%;
+                border: 2px solid red;
+                border-radius: .5rem;
+                background-color: transparent;
+                color: white;
+                padding: .5rem;
+            }
+            textarea{
+                resize: vertical;
+                width: 100%;
+            }
+            button{
+                position: relative;
+                width: 20%;
+                align-self: flex-end;
+                cursor: pointer;
+                span{
+                    position: relative;
+                    z-index: 1;
+                }
+                &::before{
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: red;
+                    z-index: 0;
+                    transition: width .25s ease;
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
