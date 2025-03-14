@@ -156,6 +156,7 @@ nav ul li a:not(.except):hover::before {
 .contact form div textarea {
   resize: vertical;
   width: 100%;
+  min-height: 4rem;
 }
 .contact form div button {
   position: relative;
