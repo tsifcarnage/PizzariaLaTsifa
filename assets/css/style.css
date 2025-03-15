@@ -231,6 +231,36 @@ nav ul li a:not(.except):hover::before {
 .horaire h2 {
   text-align: center;
 }
+.horaire dl {
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.horaire dl .daycontain {
+  display: flex;
+  justify-content: start;
+  align-items: none;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 2px solid white;
+}
+.horaire dl .daycontain dt {
+  width: 40%;
+  text-align: left;
+}
+.horaire dl .daycontain dd {
+  width: 30%;
+  text-align: right;
+  position: relative;
+}
+.horaire dl .daycontain dd:first-of-type:before {
+  content: "|";
+  color: white;
+  position: absolute;
+  top: 0;
+  right: -38px;
+}
 
 * {
   margin: 0;

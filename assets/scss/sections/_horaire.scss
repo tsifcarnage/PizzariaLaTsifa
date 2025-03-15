@@ -1,5 +1,33 @@
+@use '../mixins' as *;
 .horaire{
     h2{
         text-align: center;
+    }
+    dl{
+        padding: 2rem;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        .daycontain{
+            @include flex(start,none,1rem);
+            padding: 1rem 0;
+            border-top: 2px solid white;
+            dt{
+                width: 40%;
+                text-align: left;
+            }
+            dd{
+                width: 30%;
+                text-align: right;
+                position: relative;
+                &:first-of-type:before{
+                    content: "|";
+                    color: white;
+                    position: absolute;
+                    top: 0;
+                    right: -38px;
+                }
+            }
+        }
     }
 }
