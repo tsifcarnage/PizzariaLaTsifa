@@ -19,16 +19,16 @@ $colortitle:#F0D6AA;
             color: $colortitle;
             animation: zoomIn 2s ease-out forwards; 
             transition: transform .25s ease, opacity .25s ease;
-            &:hover{
-                animation: zoomOutUp 2s ease-out forwards;
-            }
+            // &:hover{
+            //     animation: zoomOutUp 2s ease-out forwards;
+            // }
         }
         h3{
             animation: zoomIn 2.5s ease-out forwards; 
             transition: transform .25s ease, opacity .25s ease;
-            &:hover{
-                animation: zoomOutUp 2s ease-out forwards;
-            }
+            // &:hover{
+            //     animation: zoomOutUp 2s ease-out forwards;
+            // }
         }
         @keyframes zoomIn {
             0% {

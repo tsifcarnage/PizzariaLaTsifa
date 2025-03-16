@@ -69,15 +69,9 @@ nav ul li a:not(.except):hover::before {
   animation: zoomIn 2s ease-out forwards;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
-.pizTitle div h1:hover {
-  animation: zoomOutUp 2s ease-out forwards;
-}
 .pizTitle div h3 {
   animation: zoomIn 2.5s ease-out forwards;
   transition: transform 0.25s ease, opacity 0.25s ease;
-}
-.pizTitle div h3:hover {
-  animation: zoomOutUp 2s ease-out forwards;
 }
 @keyframes zoomIn {
   0% {
@@ -264,6 +258,86 @@ nav ul li a:not(.except):hover::before {
   position: absolute;
   top: 0;
   right: -38px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-top: 1px solid white;
+  flex-direction: column;
+}
+footer img {
+  width: 100%;
+  max-width: 400px;
+}
+footer hr {
+  width: 100%;
+  max-width: 97%;
+}
+
+.navdown {
+  margin-top: 3rem;
+}
+.navdown ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.navdown ul li {
+  list-style: none;
+}
+.navdown ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 200;
+  position: relative;
+}
+.navdown ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.25s linear;
+}
+.navdown ul li a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: scaleX(1);
+}
+
+.linkdown {
+  width: calc(100% - 4rem);
+  padding: 0 2rem;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.linkdown ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.linkdown ul li {
+  list-style: none;
+}
+.linkdown ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 * {
