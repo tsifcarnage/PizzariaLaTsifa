@@ -11,12 +11,29 @@
 }
 
 .listpizza{
-    @include flex(start,center,2rem);
+   @include flex(start,start,2rem);
+   flex-direction: column;
+   h2{
+    text-align: center;
+   }
+   .pizzaitem{
+        @include flex(start,start,5rem);
+        flex-wrap: wrap;
+        article{
+            @include flex(start,start,2rem);
+            flex-direction: column;
+        }
+        details{
+            align-self: flex-start;
+            ul{
+                display: block;
+            }
+        }
+   }
     img{
         width: 100px;
+        margin: auto;
     }
-    article{
-        @include flex(start,center,2rem);
-        flex-direction: column;
-    }
+
+    
 }

@@ -125,18 +125,36 @@ nav ul li a:not(.except):hover::before {
 .listpizza {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
+  flex-direction: column;
+}
+.listpizza h2 {
+  text-align: center;
+}
+.listpizza .pizzaitem {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.listpizza .pizzaitem article {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  flex-direction: column;
+}
+.listpizza .pizzaitem details {
+  align-self: flex-start;
+}
+.listpizza .pizzaitem details ul {
+  display: block;
 }
 .listpizza img {
   width: 100px;
-}
-.listpizza article {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 2rem;
-  flex-direction: column;
+  margin: auto;
 }
 
 .contact {
