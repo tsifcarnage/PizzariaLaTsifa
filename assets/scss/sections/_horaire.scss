@@ -1,5 +1,4 @@
-@use '../mixins' as *;
-@use '../variables' as *;
+@use 'using' as *;
 .horaire{
     margin: 5rem 0;
     h2{

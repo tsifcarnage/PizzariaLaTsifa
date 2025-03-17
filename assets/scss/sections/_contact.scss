@@ -1,5 +1,4 @@
-@use '../mixins' as *;
-@use '../variables' as  *;
+@use 'using' as *;
 .contact{
     margin:3rem 0;
     form{
