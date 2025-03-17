@@ -362,7 +362,6 @@ footer hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 .container a {
   padding: 30px;
@@ -399,8 +398,13 @@ footer hr {
   height: 100%;
 }
 .modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border: 2px solid white;
   border-radius: 10px;
-  background: brown;
+  background: transparent;
   position: relative;
   padding: 30px;
 }

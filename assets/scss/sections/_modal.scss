@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     a {
       padding: 30px;
       color: #fff;
@@ -39,10 +38,12 @@
       height: 100%;
     }
     &-container {
-      border-radius: 10px;
-      background: brown;
-      position: relative;
-      padding: 30px;
+        @include flex(center,center,4rem);
+        border: 2px solid white;
+        border-radius: 10px;
+        background: transparent;
+        position: relative;
+        padding: 30px;
     }
     &-close {
       position: absolute;
