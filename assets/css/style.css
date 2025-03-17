@@ -130,7 +130,7 @@ nav ul li a:not(.except):hover::before {
   flex-direction: column;
 }
 .listpizza h2 {
-  text-align: center;
+  align-self: center;
 }
 .listpizza .pizzaitem {
   display: flex;
