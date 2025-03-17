@@ -1,3 +1,4 @@
+@use 'using' as *;
 .menu{
     h2{
         text-align: center;
@@ -6,5 +7,16 @@
         width: 100%;
         max-width: 550px;
         margin: auto;
+    }
+}
+
+.listpizza{
+    @include flex(start,center,2rem);
+    img{
+        width: 100px;
+    }
+    article{
+        @include flex(start,center,2rem);
+        flex-direction: column;
     }
 }

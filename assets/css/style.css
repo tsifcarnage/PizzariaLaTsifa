@@ -122,6 +122,23 @@ nav ul li a:not(.except):hover::before {
   margin: auto;
 }
 
+.listpizza {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.listpizza img {
+  width: 100px;
+}
+.listpizza article {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
 .contact {
   margin: 3rem 0;
 }
@@ -398,15 +415,29 @@ footer hr {
   height: 100%;
 }
 .modal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  width: 100%;
+  max-width: 600px;
   border: 2px solid white;
   border-radius: 10px;
   background: transparent;
   position: relative;
   padding: 30px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.modal-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.modal-container ul li {
+  list-style: none;
+}
+.modal-container ul li a {
+  text-decoration: none;
+  color: white;
 }
 .modal-close {
   position: absolute;
