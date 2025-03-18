@@ -18,19 +18,28 @@
     color: red;
    }
    .pizzaitem{
-        @include flex(start,start,4rem);
+        @include flex(space-evenly,start,2rem);
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 0 2rem;
         article{
             @include flex(start,start,2rem);
             flex-direction: column;
-
+        }
+        h3{
+            font-family: $ffTitle;
+            font-size: 2rem;
         }
         details{
             align-self: flex-start;
             cursor: pointer;
+            summary{
+                font-size: 2rem;
+            }
             ul{
                 display: block;
+                li{
+                    padding: .5rem;
+                }
             }
         }
    }

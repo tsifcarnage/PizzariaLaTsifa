@@ -135,11 +135,11 @@ nav ul li a:not(.except):hover::before {
 }
 .listpizza .pizzaitem {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
   align-items: start;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 2rem;
 }
 .listpizza .pizzaitem article {
   display: flex;
@@ -148,12 +148,22 @@ nav ul li a:not(.except):hover::before {
   gap: 2rem;
   flex-direction: column;
 }
+.listpizza .pizzaitem h3 {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 2rem;
+}
 .listpizza .pizzaitem details {
   align-self: flex-start;
   cursor: pointer;
 }
+.listpizza .pizzaitem details summary {
+  font-size: 2rem;
+}
 .listpizza .pizzaitem details ul {
   display: block;
+}
+.listpizza .pizzaitem details ul li {
+  padding: 0.5rem;
 }
 .listpizza img {
   width: 100px;
