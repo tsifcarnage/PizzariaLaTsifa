@@ -47,18 +47,26 @@
         padding: 30px;
         max-height: 500px;
         overflow-y: scroll;
-        ul{
+        .navmenu{
             @include flex(center,center,3rem);
+            padding-bottom: 1rem;
             margin-bottom: 2rem;
+            border-bottom: 2px solid white;
             li{
                 list-style: none;
                 a{
+                    display: block;
                     text-decoration: none;
                     color: white;
+                    transition: color .25s ease,transform .25s ease;
+                    &:hover{
+                      color:red;
+                      transform: scale(1.2);
+                    }
                 }
             }
         }
-        
+
     }
     
     &-close {

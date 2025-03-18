@@ -15,16 +15,20 @@
    flex-direction: column;
    h2{
     align-self: center;
+    color: red;
    }
    .pizzaitem{
-        @include flex(start,start,5rem);
+        @include flex(start,start,4rem);
         flex-wrap: wrap;
+        margin: 0 auto;
         article{
             @include flex(start,start,2rem);
             flex-direction: column;
+
         }
         details{
             align-self: flex-start;
+            cursor: pointer;
             ul{
                 display: block;
             }

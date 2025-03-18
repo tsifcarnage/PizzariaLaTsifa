@@ -131,13 +131,15 @@ nav ul li a:not(.except):hover::before {
 }
 .listpizza h2 {
   align-self: center;
+  color: red;
 }
 .listpizza .pizzaitem {
   display: flex;
   justify-content: start;
   align-items: start;
-  gap: 5rem;
+  gap: 4rem;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .listpizza .pizzaitem article {
   display: flex;
@@ -148,6 +150,7 @@ nav ul li a:not(.except):hover::before {
 }
 .listpizza .pizzaitem details {
   align-self: flex-start;
+  cursor: pointer;
 }
 .listpizza .pizzaitem details ul {
   display: block;
@@ -443,19 +446,27 @@ footer hr {
   max-height: 500px;
   overflow-y: scroll;
 }
-.modal-container ul {
+.modal-container .navmenu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
+  border-bottom: 2px solid white;
 }
-.modal-container ul li {
+.modal-container .navmenu li {
   list-style: none;
 }
-.modal-container ul li a {
+.modal-container .navmenu li a {
+  display: block;
   text-decoration: none;
   color: white;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.modal-container .navmenu li a:hover {
+  color: red;
+  transform: scale(1.2);
 }
 .modal-close {
   position: absolute;
