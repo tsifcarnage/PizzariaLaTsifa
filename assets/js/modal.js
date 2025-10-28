@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (e) => {
+  e.preventDefault();
   const modals = document.querySelectorAll("[data-modal]");
 
   modals.forEach(function (trigger) {
@@ -15,4 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  // function contact(){
+  //   let
+  // }
 });

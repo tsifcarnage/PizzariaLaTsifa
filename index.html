@@ -182,14 +182,15 @@
         <section  class="contact">
             <form action="">
                 <h2>Contactez-nous</h2>
-                <div>
-                    <input type="text" placeholder="Votre nom" required>
-                    <input type="email" placeholder="Votre Email" required>
-                    <input type="tel" placeholder="Votre numéro de téléphone">
-                    <input type="text" placeholder="Sujet">
-                    <textarea name="" id="" placeholder="Votre message"></textarea>
-                    <button type="submit"><span>Envoyer</span></button>
+                <div class="formCnt">
+                    <input type="text" id="nom" placeholder="Votre nom" required>
+                    <input type="email" id="mail" placeholder="Votre Email" required>
+                    <input type="tel" id="num" placeholder="Votre numéro de téléphone">
+                    <input type="text" id ="sujet" placeholder="Sujet">
+                    <textarea name="" id="message" placeholder="Votre message"></textarea>
+                    <button type="submit" onclick=""><span>Envoyer</span></button>
                 </div>
+                <div id="rep"></div>
             </form>
             <div class="coord">
                 <div class="phone">
