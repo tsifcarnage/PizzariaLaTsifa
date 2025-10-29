@@ -16,7 +16,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
       });
     });
   });
-  // function contact(){
-  //   let
-  // }
+  function contact() {
+    const formCnt = document.querySelector(".formCnt");
+    const rep = document.querySelector(".rep");
+    let nom = document.getElementById("nom");
+    let mail = document.getElementById("mail");
+    let num = document.getElementById("num");
+    let sujet = document.getElementById("sujet");
+  }
 });
