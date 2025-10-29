@@ -34,11 +34,11 @@ function contact(e) {
 
   let txt = `Bonjour ${cF(nom)}, votre sujet "${cF(
     sujet
-  )}" est bien traité. Vous avez bien comme numero de telephone ${cF(
+  )}" est bien traité.<br> Vous avez bien comme numero de telephone ${cF(
     num
-  )}, et email ${mail.toLowerCase()}.Je vous renvoie une réponse très vite.`;
-
+  )}, et email ${mail.toLowerCase()}.<br>Je vous renvoie une réponse très vite.`;
+  let txtClean = DOMPurify.sanitize(txt);
   formCnt.style.display = "none";
   rep.style.display = "block";
-  document.getElementById("response").textContent = txt;
+  document.getElementById("response").innerHTML = txtClean;
 }
