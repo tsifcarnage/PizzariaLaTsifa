@@ -2,6 +2,7 @@ $colortitle:#F0D6AA;
 .pizTitle{
     position: relative;
     img{
+        position: relative;
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -15,7 +16,7 @@ $colortitle:#F0D6AA;
         transform: translate(-50%, -50%);
         z-index: 21;
         h1{
-            font-size: 6rem;
+            font-size: clamp(3rem, 4vw, 10rem);
             color: $colortitle;
             animation: zoomIn 2s ease-out forwards; 
             transition: transform .25s ease, opacity .25s ease;
@@ -24,6 +25,7 @@ $colortitle:#F0D6AA;
             // }
         }
         h3{
+            font-size: clamp(2rem, 2vw, 3rem);
             animation: zoomIn 2.5s ease-out forwards; 
             transition: transform .25s ease, opacity .25s ease;
             // &:hover{

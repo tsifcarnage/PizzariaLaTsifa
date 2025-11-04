@@ -13,6 +13,7 @@ nav{
                 text-decoration: none;
                 color: white;
                 position: relative;
+                font-size: clamp(1.5rem,3vw,2rem);
                 img{
                     width: 100%;
                     max-width: 15rem;

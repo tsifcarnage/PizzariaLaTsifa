@@ -1,0 +1,17 @@
+@media screen and (max-width: 1108px) {
+    .a_propos {
+        .apr{
+                flex-direction: column;
+                img{
+                    width: 100%;
+                    order: 2;
+                }
+            }   
+        .savoir{
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

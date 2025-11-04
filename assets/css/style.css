@@ -19,6 +19,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
   position: relative;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 nav ul li a img {
   width: 100%;
@@ -50,6 +51,7 @@ nav ul li a:not(.except):hover::before {
   position: relative;
 }
 .pizTitle img {
+  position: relative;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -64,12 +66,13 @@ nav ul li a:not(.except):hover::before {
   z-index: 21;
 }
 .pizTitle div h1 {
-  font-size: 6rem;
+  font-size: clamp(3rem, 4vw, 10rem);
   color: #F0D6AA;
   animation: zoomIn 2s ease-out forwards;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 .pizTitle div h3 {
+  font-size: clamp(2rem, 2vw, 3rem);
   animation: zoomIn 2.5s ease-out forwards;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -111,6 +114,12 @@ nav ul li a:not(.except):hover::before {
 }
 .a_propos article p {
   margin: 3rem 0;
+}
+.a_propos article .apr img {
+  order: 1;
+}
+.a_propos article .apr div {
+  order: 2;
 }
 
 .menu h2 {
@@ -495,6 +504,21 @@ footer hr {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1108px) {
+  .a_propos .apr {
+    flex-direction: column;
+  }
+  .a_propos .apr img {
+    width: 100%;
+    order: 2;
+  }
+  .a_propos .savoir {
+    flex-direction: column;
+  }
+  .a_propos .savoir img {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
