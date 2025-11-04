@@ -5,7 +5,9 @@ nav{
     background-color: $bcg-color;
     position: fixed;
     width: 100%;
+    
     ul{
+        //display: none;
         @include flex(space-around,center,2rem);
         li{
             list-style: none;
@@ -40,6 +42,14 @@ nav{
                     transform: scaleX(1); 
                 }
             }
+        }
+    }
+}
+.burger{
+    text-align: right;
+    svg{
+        path{
+            stroke: red;
         }
     }
 }

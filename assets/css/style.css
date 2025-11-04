@@ -47,6 +47,13 @@ nav ul li a:not(.except):hover::before {
   transform: scaleX(1);
 }
 
+.burger {
+  text-align: right;
+}
+.burger svg path {
+  stroke: red;
+}
+
 .pizTitle {
   position: relative;
 }
