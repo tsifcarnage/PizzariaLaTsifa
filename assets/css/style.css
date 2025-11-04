@@ -198,6 +198,7 @@ nav ul li a:not(.except):hover::before {
   flex-direction: column;
   width: 100%;
   max-width: 600px;
+  padding: 0 2rem;
   margin: auto;
 }
 .contact form div input, .contact form div textarea, .contact form div button {
@@ -218,6 +219,7 @@ nav ul li a:not(.except):hover::before {
   width: 20%;
   align-self: flex-end;
   cursor: pointer;
+  font-size: clamp(1.5rem, 2vw, 1.6rem);
 }
 .contact form div button span {
   position: relative;
@@ -239,11 +241,11 @@ nav ul li a:not(.except):hover::before {
 }
 
 .coord {
-  margin: 3rem 0;
+  margin: 3rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0;
+  gap: 2rem;
 }
 .coord svg {
   width: 100px;
@@ -257,7 +259,6 @@ nav ul li a:not(.except):hover::before {
   width: 100%;
   max-width: 300px;
   padding: 2rem;
-  margin: 0 3rem;
   background-color: #F0D6AA;
   border-radius: 0.5rem;
 }
@@ -425,12 +426,14 @@ footer hr {
   justify-content: center;
 }
 .container a {
-  padding: 30px;
   color: #fff;
   font-weight: bold;
   font-size: 24px;
   border-radius: 10px;
   cursor: pointer;
+}
+.container img {
+  width: 100%;
 }
 
 .modal {
@@ -517,6 +520,11 @@ footer hr {
   }
   .a_propos .savoir img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 879px) {
+  .coord {
+    flex-wrap: wrap;
   }
 }
 * {

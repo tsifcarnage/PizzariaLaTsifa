@@ -15,6 +15,7 @@
             flex-direction: column;
             width: 100%;
             max-width: 600px;
+            padding:0 2rem;
             margin: auto;
             input,textarea,button{
                 width: 100%;
@@ -34,6 +35,7 @@
                 width: 20%;
                 align-self: flex-end;
                 cursor: pointer;
+                font-size: clamp(1.5rem,2vw,1.6rem);
                 span{
                     position: relative;
                     z-index: 1;
@@ -57,8 +59,8 @@
     }
 }
 .coord{
-    margin: 3rem 0;
-    @include flex(center,center,0);
+    margin: 3rem 2rem;
+    @include flex(center,center,2rem);
     svg{
         width: 100px;
         height: 100px;
@@ -71,7 +73,7 @@
         width: 100%;
         max-width: 300px;
         padding: 2rem;
-        margin: 0 3rem;
+        //margin: 0 3rem;
         background-color: $color;
         border-radius: .5rem;
     }
