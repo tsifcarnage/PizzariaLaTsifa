@@ -20,6 +20,27 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 767px){
-
+@media screen and (max-width: 724px){
+    nav{
+        background-color: rgba(0, 0, 0, 0.10);
+        ul{
+            display: none;
+        }
+        .burger{
+            display: block;
+        }
+    }
+    .linkdown{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+    .daycontain dd::before{
+        display: none;
+    }
+}
+@media screen and (max-width: 380px){
+    .navdown ul{
+        flex-direction: column;
+    }
 }

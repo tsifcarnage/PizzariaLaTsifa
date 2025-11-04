@@ -46,8 +46,10 @@ nav{
     }
 }
 .burger{
+    display: none;
     text-align: right;
     svg{
+        cursor: pointer;
         path{
             stroke: red;
         }

@@ -15,7 +15,8 @@ footer{
 .navdown{
     margin-top:3rem ;
     ul{
-        @include flex(center,center,5rem);
+        @include flex(center,center,4rem);
+        font-size:clamp(1.8rem, 1vw, 4rem);
         li{
             list-style: none;
             a{
@@ -52,7 +53,8 @@ footer{
     font-family: $ffTitle;
     font-size:1.5rem;
     margin-bottom: 2rem;
-    @include flex(space-between,center,0);
+    @include flex(space-between,center,2rem);
+    line-height: 2.2rem;
     ul{
         @include flex(center,center,2rem);
         li{

@@ -48,7 +48,11 @@ nav ul li a:not(.except):hover::before {
 }
 
 .burger {
+  display: none;
   text-align: right;
+}
+.burger svg {
+  cursor: pointer;
 }
 .burger svg path {
   stroke: red;
@@ -70,6 +74,8 @@ nav ul li a:not(.except):hover::before {
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
   z-index: 21;
 }
 .pizTitle div h1 {
@@ -226,7 +232,7 @@ nav ul li a:not(.except):hover::before {
   width: 20%;
   align-self: flex-end;
   cursor: pointer;
-  font-size: clamp(1.5rem, 2vw, 1.6rem);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
 }
 .contact form div button span {
   position: relative;
@@ -353,7 +359,8 @@ footer hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
+  font-size: clamp(1.8rem, 1vw, 4rem);
 }
 .navdown ul li {
   list-style: none;
@@ -393,7 +400,8 @@ footer hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
+  gap: 2rem;
+  line-height: 2.2rem;
 }
 .linkdown ul {
   display: flex;
@@ -532,6 +540,30 @@ footer hr {
 @media screen and (max-width: 879px) {
   .coord {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 724px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  nav ul {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+  .linkdown {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .daycontain dd::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .navdown ul {
+    flex-direction: column;
   }
 }
 * {
