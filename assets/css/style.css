@@ -6,26 +6,26 @@ nav {
   position: fixed;
   width: 100%;
 }
-nav ul {
+nav ul, nav .ulModif {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
 }
-nav ul li {
+nav ul li, nav .ulModif li {
   list-style: none;
 }
-nav ul li a {
+nav ul li a, nav .ulModif li a {
   text-decoration: none;
   color: white;
   position: relative;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
-nav ul li a img {
+nav ul li a img, nav .ulModif li a img {
   width: 100%;
   max-width: 15rem;
 }
-nav ul li a:not(.except)::before {
+nav ul li a:not(.except)::before, nav .ulModif li a:not(.except)::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -36,7 +36,7 @@ nav ul li a:not(.except)::before {
   transform: scaleX(0);
   transition: transform 0.25s linear;
 }
-nav ul li a:not(.except):hover::before {
+nav ul li a:not(.except):hover::before, nav .ulModif li a:not(.except):hover::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -45,6 +45,9 @@ nav ul li a:not(.except):hover::before {
   height: 2px;
   background-color: white;
   transform: scaleX(1);
+}
+nav .ulModif {
+  flex-direction: column;
 }
 
 .burger {

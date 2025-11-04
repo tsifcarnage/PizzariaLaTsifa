@@ -44,6 +44,10 @@ nav{
             }
         }
     }
+    .ulModif{
+        @extend ul;
+        flex-direction: column;
+    }
 }
 .burger{
     display: none;
