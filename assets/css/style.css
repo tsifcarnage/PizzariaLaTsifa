@@ -47,6 +47,8 @@ nav ul li a:not(.except):hover::before, nav .ulModif li a:not(.except):hover::be
   transform: scaleX(1);
 }
 nav .ulModif {
+  background-color: black;
+  height: 100vh;
   flex-direction: column;
 }
 

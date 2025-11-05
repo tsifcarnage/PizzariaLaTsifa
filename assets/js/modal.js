@@ -42,3 +42,14 @@ function contact(e) {
   rep.style.display = "block";
   document.getElementById("response").innerHTML = txtClean;
 }
+
+function burger() {
+  const allLi = document.querySelectorAll("li");
+  const navig = document.getElementById("navig");
+  navig.classList.add("ulModif");
+  allLi.forEach((li) => {
+    li.addEventListener("click", () => {
+      navig.classList.remove("ulModif");
+    });
+  });
+}

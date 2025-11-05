@@ -46,6 +46,8 @@ nav{
     }
     .ulModif{
         @extend ul;
+        background-color: black;
+        height: 100vh;
         flex-direction: column;
     }
 }
