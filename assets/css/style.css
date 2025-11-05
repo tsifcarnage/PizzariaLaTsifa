@@ -51,6 +51,9 @@ nav .ulModif {
   height: 100vh;
   flex-direction: column;
 }
+nav .ulModif li a {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
 
 .burger {
   display: none;
