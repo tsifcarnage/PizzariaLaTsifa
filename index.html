@@ -1,297 +1,452 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/pizza.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/pizza.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Pizzaria La Tsifa</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav >
-            <ul id="navig">
-                <li><a href="#a_propos">A propos</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a class="except" href="index.html"><img src="assets/img/pizzalogo.png" alt=""></a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#horaire">Horaires</a></li>
-            </ul>
-            <div class="burger">
-                <?xml version="1.0" encoding="utf-8"?>
-                <svg onclick="burger()" width="40px" height="40px" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </nav>
+      <nav>
+        <ul id="navig">
+          <li><a href="#a_propos">A propos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li>
+            <a class="except" href="index.html"
+              ><img src="assets/img/pizzalogo.png" alt=""
+            /></a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#horaire">Horaires</a></li>
+        </ul>
+        <div class="burger">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            onclick="burger()"
+            width="40px"
+            height="40px"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="pizTitle">
-            <img src="assets/img/pizzabg.jpg" alt="">
-            <div>
-                <h1>La Tsifa Carnaggio</h1>
-                <h3>La pizza avec un carnage de saveur a chaque bouchée</h3>
-            </div>
-        </section>
-        <section id="a_propos" class="a_propos">
-            <article class="apr">
-                <img src="assets/img/pizzapropos.jpg" alt="">
-                <div>
-                    <h2>A propos</h2>
-                    <p>La Tsifa Carnaggio est une pizzeria artisanale située en plein cœur de Liège. Notre établissement se distingue par l'utilisation d'ingrédients frais et de qualité, soigneusement sélectionnés auprès de fournisseurs locaux. Nous avons une grande variété de pizzas, y compris des options épicées, ainsi que des saveurs traditionnelles et plus originales.</p>
-                    <p>Nous sommes également fiers de vous offrir une pâte maison, pétrie à la main et cuite dans un four en pierre, garantissant une croûte parfaitement croustillante et une texture moelleuse. Notre pizzeria vous invite à vivre une expérience unique, dans une ambiance chaleureuse et conviviale, où chaque détail est pensé pour votre plaisir.</p>
-                </div>
-            </article>
-            <article class="savoir">
-                
-                <div>
-                    <h2>Savoir faire unique</h2>
-                    <p>Notre pizzaiolo, originaire de Madagascar, est un véritable expert de la pizza. Formé en collaboration avec des maîtres pizzaiolos italiens, il a su fusionner les saveurs épicées et piquantes de son île natale avec les techniques traditionnelles italiennes. </p>
-                    <p>Grâce à cette alliance unique, il a perfectionné sa maîtrise de la pizza au fil des années, offrant des créations audacieuses et savoureuses.</p>
-                    <p>Passionné par son art, il maîtrise à la perfection l'utilisation d'ingrédients authentiques tout en s'adaptant aux préférences de chaque client, proposant des options sur mesure pour tous les goûts et les restrictions alimentaires. Venez découvrir ses pizzas épicées et croustillantes chez 
-                    "La Tsifa Carnaggio" !</p>
-                </div>
-                <img src="assets/img/pizzasavoir.jpg" alt="">
-            </article>
-        </section>
-
-        <section id="menu" class="menu">
-            <h2>Découvrez notre menu</h2>
-            <div class="container">
-                <a data-modal="modal-one"><img src="assets/img/tsifamenu.png" alt=""></a>    
-            </div>
-            
-        </section>
-        <div class="modal" id="modal-one">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
-                <div class="listpizza">
-                    <h2>Nos Pizzas</h2>
-                    <div class="pizzaitem">
-                        <article>
-                            <img src="assets/img/menus/margherita.png" alt="">
-                            <h3>Margherita</h3>
-                            <details>
-                                <summary>Ingrédients</summary>
-                                <ul>
-                                    <li>Sauce tomate</li>
-                                    <li>Mozzarella</li>
-                                    <li>Basilic frais</li>
-                                    <li>Huile d'olive</li>
-                                </ul>
-                            </details>  
-                            <details>
-                                <summary>Prix</summary>
-                                <ul>
-                                    <li>Petite: 7€</li>
-                                    <li>Moyenne: 12€</li>
-                                    <li>Grande: 21€</li>
-                                </ul>
-                            </details>
-                        </article>
-                        <article>
-                            <img src="assets/img/menus/margherita.png" alt="">
-                            <h3>Margherita</h3>
-                            <details>
-                                <summary>Ingrédients</summary>
-                                <ul>
-                                    <li>Sauce tomate</li>
-                                    <li>Mozzarella</li>
-                                    <li>Basilic frais</li>
-                                    <li>Huile d'olive</li>
-                                </ul>
-                            </details>  
-                            <details>
-                                <summary>Prix</summary>
-                                <ul>
-                                    <li>Petite: 7€</li>
-                                    <li>Moyenne: 12€</li>
-                                    <li>Grande: 21€</li>
-                                </ul>
-                            </details>
-                        </article>
-                        <article>
-                            <img src="assets/img/menus/margherita.png" alt="">
-                            <h3>Margherita</h3>
-                            <details>
-                                <summary>Ingrédients</summary>
-                                <ul>
-                                    <li>Sauce tomate</li>
-                                    <li>Mozzarella</li>
-                                    <li>Basilic frais</li>
-                                    <li>Huile d'olive</li>
-                                </ul>
-                            </details>  
-                            <details>
-                                <summary>Prix</summary>
-                                <ul>
-                                    <li>Petite: 7€</li>
-                                    <li>Moyenne: 12€</li>
-                                    <li>Grande: 21€</li>
-                                </ul>
-                            </details>
-                        </article>
-                        <article>
-                            <img src="assets/img/menus/margherita.png" alt="">
-                            <h3>Margherita</h3>
-                            <details>
-                                <summary>Ingrédients</summary>
-                                <ul>
-                                    <li>Sauce tomate</li>
-                                    <li>Mozzarella</li>
-                                    <li>Basilic frais</li>
-                                    <li>Huile d'olive</li>
-                                </ul>
-                            </details>  
-                            <details>
-                                <summary>Prix</summary>
-                                <ul>
-                                    <li>Petite: 7€</li>
-                                    <li>Moyenne: 12€</li>
-                                    <li>Grande: 21€</li>
-                                </ul>
-                            </details>
-                        </article>
-                        <article>
-                            <img src="assets/img/menus/margherita.png" alt="">
-                            <h3>Margherita</h3>
-                            <details>
-                                <summary>Ingrédients</summary>
-                                <ul>
-                                    <li>Sauce tomate</li>
-                                    <li>Mozzarella</li>
-                                    <li>Basilic frais</li>
-                                    <li>Huile d'olive</li>
-                                </ul>
-                            </details>  
-                            <details>
-                                <summary>Prix</summary>
-                                <ul>
-                                    <li>Petite: 7€</li>
-                                    <li>Moyenne: 12€</li>
-                                    <li>Grande: 21€</li>
-                                </ul>
-                            </details>
-                        </article>
-                        
-                    </div>
-                    
-                </div>
-                
-                <button class="modal-close modal-exit">X</button>
-            </div>
+      <section class="pizTitle">
+        <img src="assets/img/pizzabg.jpg" alt="" />
+        <div>
+          <h1>La Tsifa Carnaggio</h1>
+          <h3>La pizza avec un carnage de saveur a chaque bouchée</h3>
         </div>
-        <section id="contact" class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43128.12200256807!2d5.538373552079213!3d50.62906043545565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sfr!2sbe!4v1741948122004!5m2!1sfr!2sbe" width="600" height="450" style="border:0; width: 100%;filter: grayscale(100%) brightness(1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+      </section>
+      <section id="a_propos" class="a_propos">
+        <article class="apr">
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            src="assets/img/pizzapropos.jpg"
+            alt=""
+          />
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-cubic"
+          >
+            <h2>A propos</h2>
+            <p>
+              La Tsifa Carnaggio est une pizzeria artisanale située en plein
+              cœur de Liège. Notre établissement se distingue par l'utilisation
+              d'ingrédients frais et de qualité, soigneusement sélectionnés
+              auprès de fournisseurs locaux. Nous avons une grande variété de
+              pizzas, y compris des options épicées, ainsi que des saveurs
+              traditionnelles et plus originales.
+            </p>
+            <p>
+              Nous sommes également fiers de vous offrir une pâte maison, pétrie
+              à la main et cuite dans un four en pierre, garantissant une croûte
+              parfaitement croustillante et une texture moelleuse. Notre
+              pizzeria vous invite à vivre une expérience unique, dans une
+              ambiance chaleureuse et conviviale, où chaque détail est pensé
+              pour votre plaisir.
+            </p>
+          </div>
+        </article>
+        <article class="savoir">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-cubic"
+          >
+            <h2>Savoir faire unique</h2>
+            <p>
+              Notre pizzaiolo, originaire de Madagascar, est un véritable expert
+              de la pizza. Formé en collaboration avec des maîtres pizzaiolos
+              italiens, il a su fusionner les saveurs épicées et piquantes de
+              son île natale avec les techniques traditionnelles italiennes.
+            </p>
+            <p>
+              Grâce à cette alliance unique, il a perfectionné sa maîtrise de la
+              pizza au fil des années, offrant des créations audacieuses et
+              savoureuses.
+            </p>
+            <p>
+              Passionné par son art, il maîtrise à la perfection l'utilisation
+              d'ingrédients authentiques tout en s'adaptant aux préférences de
+              chaque client, proposant des options sur mesure pour tous les
+              goûts et les restrictions alimentaires. Venez découvrir ses pizzas
+              épicées et croustillantes chez "La Tsifa Carnaggio" !
+            </p>
+          </div>
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            src="assets/img/pizzasavoir.jpg"
+            alt=""
+          />
+        </article>
+      </section>
 
-        <section  class="contact">
-            <form onsubmit="contact(event)">
-                <h2>Contactez-nous</h2>
-                <div class="formCnt">
-                    <input type="text" id="nom" placeholder="Votre nom" required>
-                    <input type="email" id="mail" placeholder="Votre Email" required>
-                    <input type="tel" id="num" placeholder="Votre numéro de téléphone"required>
-                    <input type="text" id ="sujet" placeholder="Sujet" required>
-                    <textarea name="" id="message" placeholder="Votre message"></textarea>
-                    <button type="submit"><span>Envoyer</span></button>
-                </div>
-                <div class="rep" style="display:none;">
-                    <p id="response"></p>
-                </div>
-            </form>
-            <div class="coord">
-                <div class="phone">
-                    <svg width="171" height="158" viewBox="0 0 171 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z" fill="#131417" stroke="#FF0509" stroke-width="4"/>
-                        <path d="M65.825 74.4625C71.225 85.075 79.925 93.775 90.5375 99.175L98.7875 90.925C99.8375 89.875 101.3 89.575 102.613 89.9875C106.812 91.375 111.312 92.125 116 92.125C116.995 92.125 117.948 92.5201 118.652 93.2234C119.355 93.9266 119.75 94.8804 119.75 95.875V109C119.75 109.995 119.355 110.948 118.652 111.652C117.948 112.355 116.995 112.75 116 112.75C99.0924 112.75 82.8774 106.034 70.9219 94.0781C58.9665 82.1226 52.25 65.9076 52.25 49C52.25 48.0054 52.6451 47.0516 53.3483 46.3483C54.0516 45.6451 55.0054 45.25 56 45.25H69.125C70.1196 45.25 71.0734 45.6451 71.7766 46.3483C72.4799 47.0516 72.875 48.0054 72.875 49C72.875 53.6875 73.625 58.1875 75.0125 62.3875C75.425 63.7 75.125 65.1625 74.075 66.2125L65.825 74.4625Z" fill="#FF0509"/>
-                    </svg>
-                    <p>+123456789</p>
-                    <a href="tel:+123456789">Appeler</a>
-                </div>
-                <div class="itin">
-                    <svg width="171" height="158" viewBox="0 0 171 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z" fill="#131417" stroke="#FF0509" stroke-width="4"/>
-                        <path d="M59.75 109V74.6875L49.25 82.75L44.75 76.75L86 45.25L101 56.6875V49H112.25V65.3125L127.25 76.75L122.75 82.75L112.25 74.6875V109H93.5V86.5H78.5V109H59.75ZM78.5 71.5937H93.5C93.5 69.5937 92.75 67.9525 91.25 66.67C89.75 65.3875 88 64.7475 86 64.75C84 64.7525 82.25 65.3938 80.75 66.6738C79.25 67.9538 78.5 69.5937 78.5 71.5937Z" fill="#FF0509"/>
-                    </svg>                        
-                    <p>78 Guillemins,4000 Liège</p>
-                    <a href="https://tinyurl.com/liegeIfa" target="_blank">Itinéraire</a>
-                </div>
-                <div class="mail">
-                    <svg width="171" height="158" viewBox="0 0 171 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z" fill="#131417" stroke="#FF0509" stroke-width="4"/>
-                        <path d="M120.615 47.8462H51.3846C45.5 47.8462 41 52.3462 41 58.2308V99.7693C41 105.654 45.5 110.154 51.3846 110.154H120.615C126.5 110.154 131 105.654 131 99.7693V58.2308C131 52.3462 126.5 47.8462 120.615 47.8462ZM123.385 101.154L96.3846 81.7693L86 88.6923L75.2692 81.7693L48.6154 101.154L70.4231 78.6539L43.7692 57.8847L86 80.7308L127.885 58.2308L101.577 79L123.385 101.154Z" fill="#FF0509"/>
-                    </svg>
-                    <p>tsifa.carnaggio@gmail.com</p>
-                    <a href="mailto:tsifa.carnaggio@gmail.com" target="_blank">E-mail</a>
-                </div>
+      <section id="menu" class="menu">
+        <h2>Découvrez notre menu</h2>
+        <div class="container">
+          <a
+            data-modal="modal-one"
+            data-aos-duration="3000"
+            data-aos-easing="ease-out"
+            ><img data-aos="flip-up" src="assets/img/tsifamenu.png" alt=""
+          /></a>
+        </div>
+      </section>
+      <div class="modal" id="modal-one">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-container">
+          <div class="listpizza">
+            <h2>Nos Pizzas</h2>
+            <div class="pizzaitem">
+              <article>
+                <img src="assets/img/menus/margherita.png" alt="" />
+                <h3>Margherita</h3>
+                <details>
+                  <summary>Ingrédients</summary>
+                  <ul>
+                    <li>Sauce tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Basilic frais</li>
+                    <li>Huile d'olive</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Prix</summary>
+                  <ul>
+                    <li>Petite: 7€</li>
+                    <li>Moyenne: 12€</li>
+                    <li>Grande: 21€</li>
+                  </ul>
+                </details>
+              </article>
+              <article>
+                <img src="assets/img/menus/margherita.png" alt="" />
+                <h3>Margherita</h3>
+                <details>
+                  <summary>Ingrédients</summary>
+                  <ul>
+                    <li>Sauce tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Basilic frais</li>
+                    <li>Huile d'olive</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Prix</summary>
+                  <ul>
+                    <li>Petite: 7€</li>
+                    <li>Moyenne: 12€</li>
+                    <li>Grande: 21€</li>
+                  </ul>
+                </details>
+              </article>
+              <article>
+                <img src="assets/img/menus/margherita.png" alt="" />
+                <h3>Margherita</h3>
+                <details>
+                  <summary>Ingrédients</summary>
+                  <ul>
+                    <li>Sauce tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Basilic frais</li>
+                    <li>Huile d'olive</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Prix</summary>
+                  <ul>
+                    <li>Petite: 7€</li>
+                    <li>Moyenne: 12€</li>
+                    <li>Grande: 21€</li>
+                  </ul>
+                </details>
+              </article>
+              <article>
+                <img src="assets/img/menus/margherita.png" alt="" />
+                <h3>Margherita</h3>
+                <details>
+                  <summary>Ingrédients</summary>
+                  <ul>
+                    <li>Sauce tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Basilic frais</li>
+                    <li>Huile d'olive</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Prix</summary>
+                  <ul>
+                    <li>Petite: 7€</li>
+                    <li>Moyenne: 12€</li>
+                    <li>Grande: 21€</li>
+                  </ul>
+                </details>
+              </article>
+              <article>
+                <img src="assets/img/menus/margherita.png" alt="" />
+                <h3>Margherita</h3>
+                <details>
+                  <summary>Ingrédients</summary>
+                  <ul>
+                    <li>Sauce tomate</li>
+                    <li>Mozzarella</li>
+                    <li>Basilic frais</li>
+                    <li>Huile d'olive</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Prix</summary>
+                  <ul>
+                    <li>Petite: 7€</li>
+                    <li>Moyenne: 12€</li>
+                    <li>Grande: 21€</li>
+                  </ul>
+                </details>
+              </article>
             </div>
-        </section>
+          </div>
 
-        <section id="horaire" class="horaire">
-            <h2>Heures d'ouverture</h2>
-            <dl>
-                <div class="daycontain">
-                    <dt>Lundi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Mardi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Mercredi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Jeudi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Vendredi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Samedi</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-                <div class="daycontain">
-                    <dt>Dimanche</dt>
-                    <dd>11h30 - 14h00</dd>
-                    <dd>17h30 - 22h</dd>
-                </div>
-            </dl>
-        </section>
+          <button class="modal-close modal-exit">X</button>
+        </div>
+      </div>
+      <section id="contact" class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43128.12200256807!2d5.538373552079213!3d50.62906043545565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sfr!2sbe!4v1741948122004!5m2!1sfr!2sbe"
+          width="600"
+          height="450"
+          style="border: 0; width: 100%; filter: grayscale(100%) brightness(1)"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="contact">
+        <form onsubmit="contact(event)">
+          <h2>Contactez-nous</h2>
+          <div class="formCnt">
+            <input type="text" id="nom" placeholder="Votre nom" required />
+            <input type="email" id="mail" placeholder="Votre Email" required />
+            <input
+              type="tel"
+              id="num"
+              placeholder="Votre numéro de téléphone"
+              required
+            />
+            <input type="text" id="sujet" placeholder="Sujet" required />
+            <textarea
+              name=""
+              id="message"
+              placeholder="Votre message"
+            ></textarea>
+            <button type="submit"><span>Envoyer</span></button>
+          </div>
+          <div class="rep" style="display: none">
+            <p id="response"></p>
+          </div>
+        </form>
+        <div class="coord">
+          <div class="phone">
+            <svg
+              width="171"
+              height="158"
+              viewBox="0 0 171 158"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z"
+                fill="#131417"
+                stroke="#FF0509"
+                stroke-width="4"
+              />
+              <path
+                d="M65.825 74.4625C71.225 85.075 79.925 93.775 90.5375 99.175L98.7875 90.925C99.8375 89.875 101.3 89.575 102.613 89.9875C106.812 91.375 111.312 92.125 116 92.125C116.995 92.125 117.948 92.5201 118.652 93.2234C119.355 93.9266 119.75 94.8804 119.75 95.875V109C119.75 109.995 119.355 110.948 118.652 111.652C117.948 112.355 116.995 112.75 116 112.75C99.0924 112.75 82.8774 106.034 70.9219 94.0781C58.9665 82.1226 52.25 65.9076 52.25 49C52.25 48.0054 52.6451 47.0516 53.3483 46.3483C54.0516 45.6451 55.0054 45.25 56 45.25H69.125C70.1196 45.25 71.0734 45.6451 71.7766 46.3483C72.4799 47.0516 72.875 48.0054 72.875 49C72.875 53.6875 73.625 58.1875 75.0125 62.3875C75.425 63.7 75.125 65.1625 74.075 66.2125L65.825 74.4625Z"
+                fill="#FF0509"
+              />
+            </svg>
+            <p>+123456789</p>
+            <a href="tel:+123456789">Appeler</a>
+          </div>
+          <div class="itin">
+            <svg
+              width="171"
+              height="158"
+              viewBox="0 0 171 158"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z"
+                fill="#131417"
+                stroke="#FF0509"
+                stroke-width="4"
+              />
+              <path
+                d="M59.75 109V74.6875L49.25 82.75L44.75 76.75L86 45.25L101 56.6875V49H112.25V65.3125L127.25 76.75L122.75 82.75L112.25 74.6875V109H93.5V86.5H78.5V109H59.75ZM78.5 71.5937H93.5C93.5 69.5937 92.75 67.9525 91.25 66.67C89.75 65.3875 88 64.7475 86 64.75C84 64.7525 82.25 65.3938 80.75 66.6738C79.25 67.9538 78.5 69.5937 78.5 71.5937Z"
+                fill="#FF0509"
+              />
+            </svg>
+            <p>78 Guillemins,4000 Liège</p>
+            <a href="https://tinyurl.com/liegeIfa" target="_blank"
+              >Itinéraire</a
+            >
+          </div>
+          <div class="mail">
+            <svg
+              width="171"
+              height="158"
+              viewBox="0 0 171 158"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M169 79C169 121.38 131.768 156 85.5 156C39.2324 156 2 121.38 2 79C2 36.62 39.2324 2 85.5 2C131.768 2 169 36.62 169 79Z"
+                fill="#131417"
+                stroke="#FF0509"
+                stroke-width="4"
+              />
+              <path
+                d="M120.615 47.8462H51.3846C45.5 47.8462 41 52.3462 41 58.2308V99.7693C41 105.654 45.5 110.154 51.3846 110.154H120.615C126.5 110.154 131 105.654 131 99.7693V58.2308C131 52.3462 126.5 47.8462 120.615 47.8462ZM123.385 101.154L96.3846 81.7693L86 88.6923L75.2692 81.7693L48.6154 101.154L70.4231 78.6539L43.7692 57.8847L86 80.7308L127.885 58.2308L101.577 79L123.385 101.154Z"
+                fill="#FF0509"
+              />
+            </svg>
+            <p>tsifa.carnaggio@gmail.com</p>
+            <a href="mailto:tsifa.carnaggio@gmail.com" target="_blank"
+              >E-mail</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="horaire" class="horaire">
+        <h2>Heures d'ouverture</h2>
+        <dl>
+          <div class="daycontain">
+            <dt>Lundi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Mardi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Mercredi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Jeudi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Vendredi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Samedi</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+          <div class="daycontain">
+            <dt>Dimanche</dt>
+            <dd>11h30 - 14h00</dd>
+            <dd>17h30 - 22h</dd>
+          </div>
+        </dl>
+      </section>
     </main>
 
     <footer>
-        <img src="assets/img/pizzalogo.png" alt="logo">
-        <div class="navdown">
-            <ul>
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#a_propos">A Propos</a></li>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </div>
-        <hr>
-        <div class="linkdown">
-            <p>© 2025 Tous droits résérvés La Tsifa Carnaggio Réalisé par Netsif Studio.</p>
-            <ul>
-                <li><a href="https://www.instagram.com/tsifcarnage/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/tsif-randria-279aa9296/" target="_blank">Linkedin</a></li>
-            </ul>
-        </div>
+      <img src="assets/img/pizzalogo.png" alt="logo" />
+      <div class="navdown">
+        <ul>
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#a_propos">A Propos</a></li>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="linkdown">
+        <p>
+          © 2025 Tous droits résérvés La Tsifa Carnaggio Réalisé par Netsif
+          Studio.
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/tsifcarnage/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tsif-randria-279aa9296/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/dompurify@3.0.5/dist/purify.min.js"></script>
     <script src="assets/js/modal.js"></script>
-</body>
+  </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
